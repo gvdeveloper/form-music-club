@@ -1,0 +1,41 @@
+nav {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav .containerNav {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 0 40px 0 40px;
+    flex-wrap: wrap;
+}
+
+nav .containerNav .logo{
+    font-weight: 500;
+    font-size: 20px;
+
+    & span{
+        font-style: italic;
+        color: rgb(255, 0, 0);
+    }
+}
+nav .containerNav .btnsNav{
+    display: flex;
+    gap: 10px;
+}
+nav .containerNav .btnsNav li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav .containerNav .btnsNav a{
+    display: block;
+    color: #ffffff;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}

@@ -1,0 +1,47 @@
+.mainContent {
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content h1{
+    color: #ffffff;
+}
+
+
+.content h1 span {
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(255, 0, 0);
+}
+
+.btn {
+    
+    width: 80%;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: #eeeeee;
+    cursor: pointer;
+    transition: all ease .4s;
+    text-align: center;
+    & a{
+        
+        color: #ffffff;
+    }
+}
+
+.btn:hover {
+    background-color: rgb(199, 0, 0);
+}
+
+#userLogin{
+    font-style:normal;
+}

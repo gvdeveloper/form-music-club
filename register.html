@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sign In</title>
+</head>
+
+<body>
+    <nav>
+        <div class="containerNav">
+            <div class="logo">
+                Music<span>Club.</span>
+            </div>
+            <div class="btnsNav">
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Sign Up</a></li>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <form id="form">
+            <header class="header">
+                <h2>SIGN UP</h2>
+            </header>
+
+            <section class="inputsGroup" id="inputsGroup">
+                <div class="inputContain" id="groupUser">
+                    <input type="text" placeholder="Full Name" name="userName" class="formInput" id="userName"
+                        autocomplete="off">
+                    <i class="bi bi-check-circle-fill Iconvalidation" id="userNameIconValidation"></i>
+                </div>
+                <div class="containAlertError" id="alertUserName">
+                    <div class="AlertError">
+                        <p>Please, insert a valid name and mini 3, max 10 characters!</p>
+                    </div>
+                </div>
+
+                <div class="inputContain" id="groupEmail">
+                    <input type="email" placeholder="Email" name="email" class="formInput" id="userEmail"
+                        autocomplete="off">
+                    <i class="bi bi-check-circle-fill Iconvalidation" id="EmailIconValidation"></i>
+                </div>
+                <div class="containAlertError" id="alertEmail">
+                    <div class="AlertError">
+                        <p>Please, insert a valid email!</p>
+                    </div>
+                </div>
+
+                <div class="inputContain" id="groupPassword">
+                    <input type="password" placeholder="Password" class="formInput" name="password" id="password"
+                        autocomplete="off">
+                    <label id="labelShowHiddenPassword"><i class="bi bi-eye-fill IconvalidationPassword"
+                            id="showHiddenPassword"></i></label>
+                </div>
+                <div class="containAlertError" id="alertPassword">
+                    <div class="AlertError">
+                        <ul>
+                            <li id="minimo">- Between 4 and 8 characters.</li>
+                            <li>- Lower and upper case letter</li>
+                            <li>- Minimum of 1 numeric character</li>
+                            <li>- Minimum of 1 special character (.!$@#$*_-+-)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="inputContain" id="groupPasswordConfirm">
+                    <input type="password" placeholder="Confirm password" class="formInput" name="passwordConfirm"
+                        id="passwordConfirm" autocomplete="off">
+                    <label id="labelShowHiddenPasswordConfirm"><i class="bi bi-eye-fill IconvalidationPassword"
+                            id="showHiddenPasswordConfirm"></i></label>
+                </div>
+                <div class="containAlertError" id="alertPasswordConfirm">
+                    <div class="AlertError">
+                        <p>Passwords don't match!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rememberMeAndPassword">
+                <label for="rememberMe" class="label">
+                    <input type="checkbox" name="rememberMe" id="rememberMe">
+                    Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </section>
+
+            <section class="privacy">
+                <label for="privacyConditions" class="label">
+                    <input type="checkbox" name="privacyConditions" id="privacyConditions">
+                    I accept all terms & conditions
+                </label>
+            </section>
+            <div class="containAlertError" id="alertPrivacy">
+                <div class="AlertError">
+                    <p>Plase accept the terms to continue!</p>
+                </div>
+            </div>
+
+            <div class="buttonContainer">
+                <button class="btn" id="btn">Sign In <i class="bi bi-arrow-bar-right"></i></button>
+            </div>
+
+            <div class="containAlertSuccess" id="alertSuccess">
+                <div class="AlertSuccess">
+                    <p>Form ok</p>
+                </div>
+            </div>
+            <div class="containAlertError" id="alertError">
+                <div class="AlertError errorForm">
+                    <p>PLEASE COMPLETE THE FORM</p>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="./js/register.js"></script>
+</body>
+
+</html>
